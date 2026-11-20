@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMFSharp</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMFSharp</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryFSharpM</module>
+        <module>../TempBaseJavaLibraryFSharpM</module>
+        
+        <module>../../allbinary_src/LogFSharpM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcFSharpM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryFSharpM</module>
+
+        <module>../ExceptionHTMLJavaLibraryFSharpM</module>
+        <module>../J2MEExceptionLibraryFSharpM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryFSharpM</module>
+        <module>../J2MEUtilJavaLibraryFSharpM</module>
+        <module>../J2MEColorJavaLibraryFSharpM</module>
+        <module>../EventJ2MELibraryFSharpM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryFSharpM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryFSharpM</module>-->
+        <module>../logging/LoggingNoneFSharpM</module>
+        <module>../logging/LoggingJ2MEAllFSharpM</module>
+        <module>../logging/LoggingJ2MEExceptionFSharpM</module>
+        <!--<module>../logging/LoggingAndroidAllFSharpM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionFSharpM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryFSharpM</module>
+        
+        <module>../lib/BaseMathLibraryFSharpM</module>
+        <module>../lib/BasicMathLibraryFSharpM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryFSharpM</module>
+        <!--<module>../../allbinary_src/ThreadHTMLLibraryFSharpM</module>-->
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryFSharpM</module>
+        <module>../time/TimeJavaLibraryFSharpM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryFSharpM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryFSharpM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryFSharpM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryFSharpM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryFSharpM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOFSharpM</module>
+
+        <module>../lib/TrigBaseLibraryFSharpM</module>
+
+    </modules>
+
+</project>
+

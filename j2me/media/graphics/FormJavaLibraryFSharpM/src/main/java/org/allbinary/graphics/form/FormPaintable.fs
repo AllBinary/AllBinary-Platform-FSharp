@@ -1,0 +1,46 @@
+namespace rec AllBinary
+
+// Generated Code Do Not Modify
+(*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ *)
+
+[<AllowNullLiteral>]
+type FormPaintable =
+    inherit Paintable
+    [<DefaultValue(false)>] val mutable form : PaintableForm
+    [<DefaultValue(false)>] static val mutable private jclinitDone : bool
+    static member jclinit() : unit =
+        if not FormPaintable.jclinitDone then
+            FormPaintable.jclinitDone <- true
+            FormPaintable.jclinitBody()
+    static member private jclinitBody() : unit =
+        ()
+    
+    new (form: PaintableForm) as this =
+        { inherit Paintable() }
+        then
+            this.jctor1(form)
+    member this.jctor1(form: PaintableForm) : unit =
+        this.form <- form
+        ()
+    
+    override this.paint(graphics: Graphics) : unit =
+        this.form.paint(graphics)
+    
+    abstract getForm : unit -> PaintableForm
+    default this.getForm() : PaintableForm =
+        this.form
+
+

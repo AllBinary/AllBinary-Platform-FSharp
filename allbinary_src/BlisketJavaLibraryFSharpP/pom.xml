@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPFSharp</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPFSharp</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryFSharpP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryFSharpM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryFSharpM</module>        
+
+        <module>../data/DataTableInterfacesFSharpM</module>
+        
+        <module>../QueueJavaLibraryFSharpM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryFSharpM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryFSharpM</module>
+
+        <module>../JavaUtilLibraryFSharpM</module>
+        <module>../NullInitInfoJavaLibraryFSharpM</module>        
+        <module>../InitInfoJavaLibraryFSharpM</module>
+        <module>../PreLoaderHttpJavaLibraryFSharpM</module>
+        
+        <module>../TagsBaseJavaLibraryFSharpM</module>
+        <module>../CustomLoaderJavaLibraryFSharpM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryFSharpM</module>
+        <module>../logic/data/file/FileJavaLibraryFSharpM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryFSharpM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryFSharpM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryFSharpM</module>
+
+        <module>../VisualStyleJavaLibraryFSharpM</module>
+
+        <module>../ConfigurationJavaLibraryFSharpM</module>
+
+        <module>../VisualTransformBaseJavaLibraryFSharpM</module>
+
+        <module>../CategoryBaseJavaLibraryFSharpM</module>
+        <module>../CategoryJavaLibraryFSharpM</module>
+
+        <module>../UserJavaLibraryFSharpM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryFSharpM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryFSharpM</module>
+        <module>../PaymentGatewayJavaLibraryFSharpM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryFSharpM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryFSharpM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryFSharpM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryFSharpM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryFSharpM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryFSharpM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryFSharpM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryFSharpM</module>
+        <module>../data/EntityVisualTransformJavaLibraryFSharpM</module>
+        <module>../data/EntityUserJavaLibraryFSharpM</module>
+        <module>../data/EntityWorkflowJavaLibraryFSharpM</module>
+
+        <module>../SMTPConfigurationJavaLibraryFSharpM</module>
+        <module>../SMTPBaseJavaLibraryFSharpM</module>
+
+        <module>../VisualTransformJavaLibraryFSharpM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryFSharpM</module>
+        <module>../GatewayJavaLibraryFSharpM</module>
+        
+        <module>../WorkflowBaseJavaLibraryFSharpM</module>
+        <module>../WorkflowJavaLibraryFSharpM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryFSharpM</module>
+        <module>../BlisketPreVOJavaLibraryFSharpM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryFSharpM</module>
+
+        <module>../UserCommerceJavaLibraryFSharpM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryFSharpM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryFSharpM</module>
+        <module>../BlisketBaseJavaLibraryFSharpM</module>
+
+        <module>../logging/LoggingGAEAllFSharpM</module>
+        <module>../BlisketJavaLibraryFSharpM</module>
+        
+    </modules>
+
+</project>
+

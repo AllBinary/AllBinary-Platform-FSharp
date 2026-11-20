@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>GameJ2MEOptionalLibraryPOMFSharp</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>GameJ2MEOptionalLibraryPOMFSharp</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+        
+        <!--<module>../../ProgressLazyJ2MEJavaLibraryFSharpM</module>-->
+        <!--
+                <module>../../games/GameScoresBaseHTMLLibraryFSharpM</module>
+                <module>../../games/GameScoresJ2MEJavaLibraryFSharpM</module>
+                <module>../../../allbinary_src/licensing/RemoteXmlRpcJavaLibraryFSharpM</module>
+                <module>../../games/GameScoresLocalLibraryFSharpM</module>
+                <module>../../games/GameScoresRemoteAndLocalLibraryFSharpM</module>
+        -->
+<!-- in GameJ2MELibraryPOM <module>../../media/graphics/ImageCacheJ2MEJavaLibraryFSharpM</module>-->
+        <!--<module>../../media/graphics/ImageCacheLazyJ2MEJavaLibraryFSharpM</module>-->
+        <!--        <module>../../media/graphics/ImageCacheOpenGLESJavaLibraryFSharpM</module>-->
+        <module>../../media/graphics/LazyGameResourceNoneJavaLibraryFSharpM</module>
+
+<!-- in GameJ2MELibraryPOM <module>../../../graphics/opengl/OpenGLNoneJavaLibraryFSharpM</module>-->
+
+        <!--
+                <module>../../../graphics/opengl/OpenGLESJavaLibraryFSharpM</module>
+        -->
+
+<!-- in GameJ2MELibraryPOM <module>../../input/JSEGyroSensorJavaLibraryFSharpM</module>-->
+        <!--        
+                <module>../../ProgressJ2MEJavaLibraryFSharpM</module>
+        -->
+        <!--        
+                //At some point the GameInput libraries were here
+        -->
+        
+        <!--
+        ../../
+        <module>../../../../workfsharp/j2me/media/graphics/FormJMEJavaLibraryFSharpM</module>
+        -->
+        <!--
+        ../../
+        <module>../../../../workfsharp/j2me/media/graphics/FormJSEJavaLibraryFSharpM</module>
+        -->
+
+        <!--<module>../../media/sound/J2SEMediaMIDPMinimalJavaLibraryFSharpM</module>-->
+<!--        <module>../../media/sound/NotDeviceSpecificMIDP2JavaLibraryFSharpM</module>-->
+        <!--<module>../../media/sound/MediaMIDP2ForHTMLJavaLibraryFSharpM</module>-->
+
+        <!--
+                <module>../../../../workfsharp/j2me/ScreenCaptureAndroidJavaLibraryFSharpM</module>
+        -->
+    </modules>
+
+</project>
+

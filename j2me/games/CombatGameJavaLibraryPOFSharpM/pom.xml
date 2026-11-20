@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMFSharp</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMFSharp</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryFSharpM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryFSharpM</module>
+
+        <module>../../../physics/MovementJavaLibraryFSharpM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryFSharpM</module>
+        <module>../../games/PickupGameJavaLibraryFSharpM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryFSharpM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryFSharpM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryFSharpM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryFSharpM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryFSharpM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryFSharpM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryFSharpM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryFSharpM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryFSharpM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryFSharpM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryFSharpM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryFSharpM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryFSharpM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryFSharpM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryFSharpM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryFSharpM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryFSharpM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryFSharpM</module>
+        <module>../../games/CollisionLibraryFSharpM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryFSharpM</module>
+
+        <module>../../games/PickupLayerJavaLibraryFSharpM</module>
+
+        <module>../../games/DamageGameJavaLibraryFSharpM</module>
+        <module>../../games/DropJavaLibraryFSharpM</module>
+        <module>../../games/WeaponLayerJavaLibraryFSharpM</module>
+
+        <module>../../games/CombatGameJavaLibraryFSharpM</module>
+        <module>../../games/LifeJavaLibraryFSharpM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryFSharpM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryFSharpM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryFSharpM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryFSharpM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryFSharpM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryFSharpM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryFSharpM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryFSharpM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackFSharpP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workfsharp/j2me/games/strategy/rts/RTSGameJavaLibraryFSharpP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryFSharpP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryFSharpM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryFSharpM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryFSharpM</module>
+
+        <module>../../input/TrackingEventJavaLibraryFSharpM</module>
+        <module>../../../game/behavior/BehaviorLibraryFSharpP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryFSharpP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryFSharpM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryFSharpM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryFSharpM</module>-->
+        <!--<module>../../android/VirtualKeyboardJavaLibraryFSharpM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+
